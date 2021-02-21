@@ -27,6 +27,6 @@ let que_count = 0;
 //getting questions and answers form array
 function showQuestions(){
     const que_text = document.querySelector('.que_text');
-    let que_tag =' <span>'+ questions[0].question +'</span>';
+    let que_tag =' <span>'+ questions[0].question +'</span>'; //I wasn't able to get this line to work and I didn't give myself enough time for it. 
     que_text.innerHTML - que_tag;
 }
