@@ -5,20 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" src="css\style.css">
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://kit.fontawesome.com/770a7a31bd.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-            <!-- Start Quiz Button -->
+        <!-- Start Quiz Button -->
         <div class="start_btn"><button>Start Quiz</button></div>
         <!-- Info Box -->
         <div class="info_box">
             <div class="info_title">
                 <span>Quiz Rules:</span>
             </div>
+            <div class='info_list'>
+                <div class="info">You have <span> 60 Seconds </span> to answer 5 questions.</div>
+                <div class="info">If you get a question wrong the timer will reduce by 5 seconds.</div>
+                <div class="info">Once you select an answer you cannot reselect.</div>
+                <div class="info">If you exit the test you will have to start over.</div>
+                <div class="info">You will get points based on correct answers.</div>
+                <div class="info">Score will be displayed at the end of the quiz.</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Continue</button>
+            </div>
+        
         </div>
-        <!-- FontAwesome CDN Link for Icons -->  
-            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <!-- Quiz Box -->
+        <div class="quiz_box">
+            <header>
+                <div class="title">Code Quiz</div>
+                <div class="timer">
+                    <div class="time_text">Time Left</div>
+                    <div class="timer_sec">60</div>
+                </div>
+            </header>
+            <section>
+                <div class="que_text">
+                    <span>What does HTML stand for?</span>
+                </div>
+                <div class="option_list">
+                    <div class="option">
+                        <span>Hyper Text PreProcessor</span>
+                        <div class="icon tick"><i class='fas fa-check'></i></div>
+                    </div>
+                    <div class="option">
+                        <span>Hyper Text Markup Language</span>
+                        <div class="icon cross"><i class= "fas fa-times" ></i></div>
+                    </div>
+                    <div class="option">
+                        <span>Hyper Tool Multi Language</span>
+                    </div>
+                    <div class="option">
+                        <span>Hyper Tool Multiple Language</span>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="total_que">
+                    <span><p>2</p>of <p>5</p>Questions</span>
+                </div>
+                <button class="next_btn">Next Question</button>
+            </footer>
+        </div>
+            <!-- Result Box -->
+            <div class="result_box">
+                <div class="icon">
+                    <i class='fa fa-crown'></i>
+                </div>
+                <div class="complete_text">You've completed the quiz!</div>
+                <div class="score_text">
+                    <span>You got a <p>2</p> out of <p>5</p></span>
+                </div>
+                <div class="buttons">
+                    <button class="restart">Replay Quiz</button>
+                    <button class="quit">Quit Quiz</button>
+                </div>
+            </div>
+            
     <script src="js\script.js"></script>
 </body>
 </html>
